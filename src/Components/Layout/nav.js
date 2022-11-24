@@ -6,7 +6,7 @@ import { MdOutlineClose } from "react-icons/md";
 const Nav = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   return (
-    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-8 p-8 absolute top-0 w-full right-0 z-10'>
+    <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-8 p-8 absolute top-0 w-full right-0 z-10 max-w-[2000px] mx-auto'>
       <div className='flex justify-between w-full md:w-fit'>
         <img src={logo} alt='logo' />
         <i
