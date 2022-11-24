@@ -48,7 +48,7 @@ const Footer = () => {
             <a href='https://twitter.com/LifegateBank/'>
               <img src={tw} className='w-4' alt='' />
             </a>
-            <a href=''>
+            <a href='https://web.facebook.com/profile.php?id=100071847211344'>
               <img src={fb} className='w-4' alt='' />
             </a>
           </div>
