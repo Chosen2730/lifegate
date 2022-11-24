@@ -1,6 +1,7 @@
 import React from "react";
 import about from "../assets/images/about.png";
 import point from "../assets/images/point.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const About = () => {
   return (
@@ -9,37 +10,43 @@ const About = () => {
         <img src={about} alt='' />
       </div>
       <div>
-        <div className='flex items-center p-2 py-4 md:p-8 rounded-md bg-white gap-4 my-10'>
-          <img src={point} alt='' />
-          <div>
-            <h2 className='text-[#028006] font-bold text-2xl'>About Us</h2>
-            <p className='my-4 text-sm md:text-lg'>
-              With 13+ years of experience, We have been providing financial and
-              advisory services to the low income echelon of the Nigerian
-              Society with such efficiency and integrity that all stakeholders
-              are justifiably proud to be associated with.
-            </p>
-            <button className='bg-[#028006] p-4 px-8 text-white ml-auto w-fit rounded-md'>
-              Read more
-            </button>
+        <AnimationOnScroll animateIn='animate__zoomIn'>
+          <div className='flex items-center p-2 py-4 md:p-8 rounded-md bg-white gap-4 my-10'>
+            <img src={point} alt='' />
+            <div>
+              <h2 className='text-[#028006] font-bold text-2xl'>About Us</h2>
+              <p className='my-4 text-sm md:text-lg'>
+                With 13+ years of experience, We have been providing financial
+                and advisory services to the low income echelon of the Nigerian
+                Society with such efficiency and integrity that all stakeholders
+                are justifiably proud to be associated with.
+              </p>
+              <button className='bg-[#028006] p-4 px-8 text-white ml-auto w-fit rounded-md shadow-xl hover:bg-green-900 transiton hover:scale-105'>
+                Read more
+              </button>
+            </div>
           </div>
-        </div>
-        <div className='flex items-center p-2 py-4 md:p-8 rounded-md bg-white gap-4 my-10'>
-          <img src={point} alt='' />
-          <div>
-            <h2 className='text-[#028006] font-bold text-2xl'>What We Offer</h2>
-            <p className='my-4 text-sm md:text-lg'>
-              We pride ourselves in our ability to provide simple solutions with
-              quality, excellent and exceptional services. As such, we are
-              deliberate in ensuring that we are constantly abreast of
-              innovations and market changes that can affect the businesses in
-              our sector.
-            </p>
-            <button className='bg-[#028006] p-4 px-8 text-white ml-auto w-fit rounded-md'>
-              See more
-            </button>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn='animate__zoomIn'>
+          <div className='flex items-center p-2 py-4 md:p-8 rounded-md bg-white gap-4 my-10'>
+            <img src={point} alt='' />
+            <div>
+              <h2 className='text-[#028006] font-bold text-2xl'>
+                What We Offer
+              </h2>
+              <p className='my-4 text-sm md:text-lg'>
+                We pride ourselves in our ability to provide simple solutions
+                with quality, excellent and exceptional services. As such, we
+                are deliberate in ensuring that we are constantly abreast of
+                innovations and market changes that can affect the businesses in
+                our sector.
+              </p>
+              <button className='bg-[#028006] p-4 px-8 text-white ml-auto w-fit rounded-md shadow-xl hover:bg-green-900 transiton hover:scale-105'>
+                See more
+              </button>
+            </div>
           </div>
-        </div>
+        </AnimationOnScroll>
       </div>
     </div>
   );

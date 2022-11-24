@@ -10,7 +10,10 @@ const Services = () => {
       <div className='grid grid-flow-col overflow-x-scroll horScroll scroll p-5 bg-[#028006] text-white'>
         {services.map(({ service, img }, i) => {
           return (
-            <div key={i} className='w-[150px] md:w-[300px]'>
+            <div
+              key={i}
+              className='w-[150px] md:w-[300px] hover:scale-105 transition'
+            >
               <img
                 src={img}
                 className='w-32 h-24 md:w-72 md:h-[200px] object-cover'

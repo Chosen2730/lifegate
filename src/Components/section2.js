@@ -14,7 +14,7 @@ const Section2 = () => {
         <p className='text-lg my-3'>
           Open a Lifegate account in minutes and start living
         </p>
-        <button className='p-4 font-bold px-8 rounded-md shadow-lg text-[#028006] bg-white my-4'>
+        <button className='z-50 relative p-4 font-bold px-8 rounded-md shadow-xl hover:bg-black transiton hover:scale-105 text-[#028006] bg-white my-4'>
           Register now
         </button>
       </div>
