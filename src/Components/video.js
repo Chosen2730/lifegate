@@ -1,0 +1,35 @@
+import React, { useEffect, useRef } from "react";
+import video from "../assets/videos/video.mp4";
+export default function Video() {
+  const videoEl = useRef(null);
+
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error) => {
+        console.error("Error attempting to play", error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
+
+  return (
+    <div className=''>
+      <div className='relative'>
+        <video
+          className='w-screen min-h-[850px] object-cover'
+          playsInline
+          loop
+          muted
+          controls
+          alt='All the devices'
+          src={video}
+          ref={videoEl}
+        />
+        <div className='bg-gray-900 opacity-50 w-full h-full absolute top-0 right-0' />
+      </div>
+    </div>
+  );
+}

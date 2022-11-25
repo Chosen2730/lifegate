@@ -38,11 +38,9 @@ const Footer = () => {
           <h2 className='font-medium uppercase'>Contact Us</h2>
           <div className='flex items-center gap-4 mt-4 text-gray-300 text-xs'>
             <a href='https://www.instagram.com/lifegatebank/'>
-              {" "}
               <img src={ig} className='w-4' alt='' />
             </a>
             <a href='https://www.linkedin.com/in/lifegatebank/'>
-              {" "}
               <img src={linkedin} className='w-4' alt='' />
             </a>
             <a href='https://twitter.com/LifegateBank/'>
