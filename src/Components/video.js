@@ -23,8 +23,8 @@ export default function Video() {
           playsInline
           loop
           muted
-          controls
-          alt='All the devices'
+          controls='false'
+          alt='video'
           src={video}
           ref={videoEl}
         />
