@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import video from "../assets/videos/video.mp4";
+import video from "../assets/videos/video2.mp4";
 export default function Video() {
   const videoEl = useRef(null);
 
