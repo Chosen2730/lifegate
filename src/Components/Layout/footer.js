@@ -37,16 +37,22 @@ const Footer = () => {
         <div>
           <h2 className='font-medium uppercase'>Contact Us</h2>
           <div className='flex items-center gap-4 mt-4 text-gray-300 text-xs'>
-            <a href='https://www.instagram.com/lifegatebank/'>
+            <a target={"_blank"} href='https://www.instagram.com/lifegatebank/'>
               <img src={ig} className='w-4' alt='' />
             </a>
-            <a href='https://www.linkedin.com/in/lifegatebank/'>
+            <a
+              target={"_blank"}
+              href='https://www.linkedin.com/in/lifegatebank/'
+            >
               <img src={linkedin} className='w-4' alt='' />
             </a>
-            <a href='https://twitter.com/LifegateBank/'>
+            <a target={"_blank"} href='https://twitter.com/LifegateBank/'>
               <img src={tw} className='w-4' alt='' />
             </a>
-            <a href='https://web.facebook.com/profile.php?id=100071847211344'>
+            <a
+              target={"_blank"}
+              href='https://web.facebook.com/profile.php?id=100071847211344'
+            >
               <img src={fb} className='w-4' alt='' />
             </a>
           </div>
