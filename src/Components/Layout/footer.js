@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='bg-black text-white p-4 md:px-8 py-20 max-w-[2000px] mx-auto'>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-sm gap-8'>
         <div>
-          <img src={logo} alt='logo' />
+          <img src={logo} className='w-24' alt='logo' />
           <p className='text-base'>
             Life Gate Microfinance <br /> Bank
           </p>
