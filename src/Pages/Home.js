@@ -6,6 +6,7 @@ import Partners from "../Components/partners";
 import Section2 from "../Components/section2";
 import Services from "../Components/services";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import Slider from "../Components/swiper";
 
 const Home = () => {
   return (
@@ -15,7 +16,10 @@ const Home = () => {
         <Section2 />
       </AnimationOnScroll>
       <About />
-      <Services />
+      {/* <Services /> */}
+      <div className='p-5 bg-[#028006] text-white'>
+        <Slider />
+      </div>
       <Partners />
       <AnimationOnScroll animateIn='animate__zoomIn'>
         <CTA />
