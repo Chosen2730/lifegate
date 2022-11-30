@@ -25,6 +25,7 @@ const Nav = () => {
           } flex md:flex-row md:items-center gap-8 text-sm font-medium text-white`}
         >
           <Link to='/about'>About Us</Link>
+          <Link to='/team'>The Team</Link>
           <a href='#'>Our Services</a>
           <a href='#'>Contact Us</a>
           <Link

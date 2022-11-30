@@ -6,6 +6,7 @@ import Nav from "../Components/Layout/nav";
 import Apply from "../Pages/Apply";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
+import Team from "../Pages/Team";
 const AppRoute = () => {
   return (
     <Router>
@@ -14,6 +15,7 @@ const AppRoute = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/apply' element={<Apply />} />
+        <Route path='/team' element={<Team />} />
       </Routes>
       <Footer />
     </Router>

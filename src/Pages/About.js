@@ -13,7 +13,7 @@ const About = () => {
           <h1 className='font-medium text-3xl md:text-6xl text-center'>
             About us
           </h1>
-          <p className='text-4xl md:text-7x text-center font-bold my-6'>
+          <p className='text-3xl md:text-7x text-center font-bold my-6'>
             Lifegate <span className='text-yellow-600'>Microfinance Bank</span>
           </p>
         </div>
