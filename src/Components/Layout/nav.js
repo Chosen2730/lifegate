@@ -11,7 +11,7 @@ const Nav = () => {
         <div className='flex justify-between w-full md:w-fit'>
           <img src={logo} className='w-20' alt='logo' />
           <i
-            className='flex md:hidden text-white bg-green-600 w-12 h-12 text-3xl items-center justify-center rounded-md'
+            className='flex md:hidden text-white bg-[#028006] w-12 h-12 text-3xl items-center justify-center rounded-md'
             onClick={() => setIsDropDown(!isDropDown)}
           >
             {isDropDown ? <MdOutlineClose /> : <CgMenuMotion />}
@@ -22,11 +22,11 @@ const Nav = () => {
             isDropDown ? "flex-col" : "hidden md:flex"
           } flex md:flex-row md:items-center gap-8 text-sm font-medium text-white`}
         >
-          <a href='#'>About Us</a>
+          <Link to='/about'>About Us</Link>
           <a href='#'>Our Services</a>
           <a href='#'>Contact Us</a>
           <Link
-            className='bg-green-600 p-4 px-8 text-white rounded-md font-bold hover:scale-105 hover:bg-green-900 transition'
+            className='bg-[#028006] p-4 px-8 text-white rounded-md font-bold hover:scale-105 hover:bg-green-900 transition'
             to='/'
           >
             Apply Here
