@@ -9,7 +9,9 @@ const Nav = () => {
     <nav className='max-w-[2000px] mx-auto relative'>
       <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-8 p-8 absolute top-0 w-full right-0 z-10 '>
         <div className='flex justify-between w-full md:w-fit'>
-          <img src={logo} className='w-20' alt='logo' />
+          <Link to='/'>
+            <img src={logo} className='w-20' alt='logo' />
+          </Link>
           <i
             className='flex md:hidden text-white bg-[#028006] w-12 h-12 text-3xl items-center justify-center rounded-md'
             onClick={() => setIsDropDown(!isDropDown)}
