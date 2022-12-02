@@ -7,9 +7,13 @@ const Nav = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   return (
     <nav className='max-w-[2000px] mx-auto relative'>
-      <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-8 p-8 absolute top-0 w-full right-0 z-10 '>
+      <div
+        className={`${
+          isDropDown ? "bg-grad" : "bg-transparent"
+        } md:bg-transparent flex flex-col md:flex-row md:items-center md:justify-between gap-8 p-8 absolute top-0 w-full right-0 z-10`}
+      >
         <div className='flex justify-between w-full md:w-fit'>
-          <Link to='/'>
+          <Link to='/' onClick={() => setIsDropDown(false)}>
             <img src={logo} className='w-20' alt='logo' />
           </Link>
           <i
@@ -24,10 +28,18 @@ const Nav = () => {
             isDropDown ? "flex-col" : "hidden md:flex"
           } flex md:flex-row md:items-center gap-8 text-sm font-medium text-white`}
         >
-          <Link to='/about'>About Us</Link>
-          <Link to='/team'>The Team</Link>
-          <Link to='/services'>Our Services</Link>
-          <a href='#'>Contact Us</a>
+          <Link to='/about' onClick={() => setIsDropDown(false)}>
+            About Us
+          </Link>
+          <Link to='/team' onClick={() => setIsDropDown(false)}>
+            The Team
+          </Link>
+          <Link to='/services' onClick={() => setIsDropDown(false)}>
+            Our Services
+          </Link>
+          <a href='#' onClick={() => setIsDropDown(false)}>
+            Contact Us
+          </a>
           <Link
             className='bg-[#028006] p-4 px-8 text-white rounded-md font-bold hover:scale-105 hover:bg-green-900 transition'
             to='/'

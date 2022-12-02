@@ -53,7 +53,7 @@ const Services = () => {
           );
         })}
       </div>
-      <div className='max-w-6xl mx-auto'>
+      <div className='max-w-6xl mx-auto p-4'>
         <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
           Apply Now
         </button>
