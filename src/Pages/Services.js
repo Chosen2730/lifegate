@@ -16,6 +16,13 @@ const Services = () => {
     { service: "Lifegate Invest Account", img: account },
     { service: "Lifegate Social Investor Account", img: social },
   ];
+  const loans = [
+    { title: "Lifegate Kiakia Loan", amount: "100,000" },
+    { title: "Lifegate Micro Loan", amount: "100,000" },
+    { title: "Lifegate SME Loan", amount: "100,000" },
+    { title: "Lifegate Salary Loan", amount: "100,000" },
+    { title: "Lifegate Asset/ LPO Loan", amount: "100,000" },
+  ];
   return (
     <div>
       <div className='relative'>
@@ -50,6 +57,36 @@ const Services = () => {
         <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
           Apply Now
         </button>
+      </div>
+      <div className='bg-gray-50 p-8'>
+        <div className='max-w-6xl mx-auto my-20 '>
+          <h2 className='font-bold text-2xl text-center'>Loan Services</h2>
+          <p className='text-base my-5 text-center'>
+            We will match you with a loan that meets your financial needs. With
+            Fast and easy application process with Lifegate Microfinance, Begin
+            with a click.
+          </p>
+          <div className='bg-white p-8'>
+            <div className='max-w-2xl mx-auto flex flex-col gap-8'>
+              {loans.map(({ title, amount }, i) => {
+                return (
+                  <div
+                    className='flex flex-col md:flex-row justify-between'
+                    key={i}
+                  >
+                    <h2 className='text-lg font-medium'>{title}</h2>
+                    <h2 className='text-gray-700'>Max NGN {amount}</h2>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className='max-w-6xl mx-auto'>
+            <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
+              Apply Now
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
