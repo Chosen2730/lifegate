@@ -26,7 +26,7 @@ const Nav = () => {
         >
           <Link to='/about'>About Us</Link>
           <Link to='/team'>The Team</Link>
-          <a href='#'>Our Services</a>
+          <Link to='/services'>Our Services</Link>
           <a href='#'>Contact Us</a>
           <Link
             className='bg-[#028006] p-4 px-8 text-white rounded-md font-bold hover:scale-105 hover:bg-green-900 transition'
