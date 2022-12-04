@@ -81,8 +81,10 @@ const Blog = () => {
             );
           })}
         </div>
+        <div className='p-4 md:p-8'>
+          <Section2 />
+        </div>
       </div>
-      <Section2 />
     </div>
   );
 };
