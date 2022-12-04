@@ -1,6 +1,8 @@
 import React from "react";
 import phone from "../assets/images/phone.png";
 import spiral from "../assets/images/spiral.png";
+import google from "../assets/images/google.png";
+import app from "../assets/images/app.png";
 
 const Section2 = () => {
   return (
@@ -14,9 +16,11 @@ const Section2 = () => {
         <p className='text-lg my-3'>
           Open a Lifegate account in minutes and start living
         </p>
-        <button className='z-50 relative p-4 font-bold px-8 rounded-md shadow-xl hover:bg-black transiton hover:scale-105 text-[#028006] bg-white my-4'>
-          Register now
-        </button>
+
+        <div className='flex gap-5 my-10'>
+          <img src={google} className='' alt='google' />
+          <img src={app} className='' alt='app' />
+        </div>
       </div>
       <div className='flex flex-col md:flex-row items-center gap-2 my-10'>
         <img src={phone} alt='phone' />
@@ -27,6 +31,9 @@ const Section2 = () => {
           <li className='list-disc my-3'>Lifegate Future Account</li>
           <li className='list-disc my-3'>Lifegate Invest</li>
           <li className='list-disc my-3'>Lifegate Social Investor</li>
+          <button className='z-50 relative p-4 font-bold px-8 rounded-md shadow-xl hover:bg-black transition hover:scale-105 text-[#028006] bg-white my-4'>
+            Register now
+          </button>
         </div>
       </div>
       <div className='absolute top-0 flex items-center justify-center w-full h-full'>

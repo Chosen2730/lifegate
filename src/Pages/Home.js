@@ -7,6 +7,7 @@ import Section2 from "../Components/section2";
 import Services from "../Components/services";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Slider from "../Components/swiper";
+import Faq from "../Components/Faq";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <AnimationOnScroll animateIn='animate__zoomIn'>
         <CTA />
       </AnimationOnScroll>
+      <Faq />
     </div>
   );
 };

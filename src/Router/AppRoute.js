@@ -8,6 +8,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Team from "../Pages/Team";
 import Services from "../Pages/Services";
+import Blog from "../Pages/Blog";
 const AppRoute = () => {
   return (
     <Router>
@@ -18,6 +19,7 @@ const AppRoute = () => {
         <Route path='/apply' element={<Apply />} />
         <Route path='/team' element={<Team />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/blog' element={<Blog />} />
       </Routes>
       <Footer />
     </Router>
