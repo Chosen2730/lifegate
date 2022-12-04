@@ -81,7 +81,7 @@ const Blog = () => {
             );
           })}
         </div>
-        <div className='p-4 md:p-8'>
+        <div className='p-0 md:p-8'>
           <Section2 />
         </div>
       </div>

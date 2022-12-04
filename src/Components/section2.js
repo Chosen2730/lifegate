@@ -17,9 +17,9 @@ const Section2 = () => {
           Open a Lifegate account in minutes and start living
         </p>
 
-        <div className='flex gap-5 my-10'>
-          <img src={google} className='' alt='google' />
-          <img src={app} className='' alt='app' />
+        <div className='flex justify-center sm:justify-start gap-5 my-10'>
+          <img src={google} className='w-32 md:w-52' alt='google' />
+          <img src={app} className='w-32 md:w-52' alt='app' />
         </div>
       </div>
       <div className='flex flex-col md:flex-row items-center gap-2 my-10'>
