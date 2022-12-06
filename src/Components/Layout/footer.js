@@ -6,6 +6,8 @@ import linkedin from "../../assets/images/in.png";
 import ig from "../../assets/images/ig.png";
 import app from "../../assets/images/app.png";
 import google from "../../assets/images/google.png";
+import { Link } from "react-router-dom";
+import whatsapp from "../../assets/images/whatsapp.png";
 
 const Footer = () => {
   return (
@@ -32,6 +34,8 @@ const Footer = () => {
           <div className='flex flex-col gap-2 mt-4 text-gray-300 text-xs'>
             <h3 className=''>Customer Service</h3>
             <h3 className=''>Privacy Policy</h3>
+            <Link to='/terms'>Terms & Condition</Link>
+            <Link to='/faq'>FAQs</Link>
           </div>
         </div>
         <div>
@@ -65,6 +69,15 @@ const Footer = () => {
       <p className='text-center text-xs mt-10'>
         Copyright 2022. All Rights Reserved
       </p>
+      <a
+        href='http://wa.me/2348096809905'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <div className='fixed bottom-10 right-4 z-50 bg-black p-3 rounded-full'>
+          <img src={whatsapp} className='w-8 object-contain ' alt='' />
+        </div>
+      </a>
     </div>
   );
 };

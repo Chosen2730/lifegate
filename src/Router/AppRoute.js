@@ -9,6 +9,8 @@ import About from "../Pages/About";
 import Team from "../Pages/Team";
 import Services from "../Pages/Services";
 import Blog from "../Pages/Blog";
+import Faq from "../Pages/Faq";
+import Terms from "../Pages/Terms";
 const AppRoute = () => {
   return (
     <Router>
@@ -20,6 +22,8 @@ const AppRoute = () => {
         <Route path='/team' element={<Team />} />
         <Route path='/services' element={<Services />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/faq' element={<Faq />} />
+        <Route path='/terms' element={<Terms />} />
       </Routes>
       <Footer />
     </Router>

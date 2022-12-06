@@ -7,7 +7,6 @@ const Nav = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const navLinks = [
-    { link: "Home", url: "/" },
     { link: "About Us", url: "/about" },
     { link: "The Team", url: "/team" },
     { link: "Our Services", url: "/services" },

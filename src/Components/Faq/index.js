@@ -5,9 +5,6 @@ import Singlefaq from "./singleFaq";
 const Faq = () => {
   return (
     <div className='my-20 max-w-3xl mx-auto'>
-      <h1 className='text-center font-bold text-3xl text-[#028006]'>
-        Frequently Asked Questions (FAQS)
-      </h1>
       <div className='my-10 p-4'>
         {faqs.map((faq, index) => {
           return <Singlefaq key={index} {...faq} />;
