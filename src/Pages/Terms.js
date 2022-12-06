@@ -14,7 +14,7 @@ const Terms = () => {
           </p>
         </div>
       </div>
-      <div className='max-w-4xl mx-auto text-base my-10 p-4'>
+      <div className='max-w-4xl mx-auto text-sm my-10 p-4'>
         <p className='my-4'>
           Welcome to our Terms and Conditions of Use. These terms affect your
           legal rights, endeavour to read them and treat with utmost importance.
