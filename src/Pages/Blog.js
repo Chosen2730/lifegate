@@ -18,35 +18,6 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className='max-w-6xl mx-auto p-8'>
-        <h2 className='text-xl font-bold my-5'>Top Stories</h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
-          {posts.slice(0, 6).map(({ img, title, desc, category }, i) => {
-            return (
-              <div key={i} className=' rounded-md bg-gray-50'>
-                <img
-                  className='w-full rounded-md h-60 object-cover'
-                  src={img}
-                  alt={category}
-                />
-                <div className='p-3'>
-                  <h2 className='text-[#028006] text-base capitalize my-2 font-bold'>
-                    {category}
-                  </h2>
-                  <h2 className='text-base'>{desc}</h2>
-
-                  <a
-                    href=''
-                    className='text-sm text-[#028006] italic my-4 block'
-                  >
-                    Read More...
-                  </a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
       <div>
         <BlogHeader />
         <div className='max-w-5xl mx-auto p-8'>

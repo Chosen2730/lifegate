@@ -10,9 +10,9 @@ const Nav = () => {
     { link: "About Us", url: "/about" },
     { link: "The Team", url: "/team" },
     { link: "Our Services", url: "/services" },
-    { link: "Contact Us", url: "/" },
+    { link: "Contact Us", url: "/contact" },
     { link: "Blog", url: "/blog" },
-    { link: "Apply  Here", url: "/" },
+    { link: "Apply  Here", url: "/apply" },
   ];
   return (
     <nav className='max-w-[2000px] mx-auto relative'>

@@ -11,6 +11,7 @@ import Services from "../Pages/Services";
 import Blog from "../Pages/Blog";
 import Faq from "../Pages/Faq";
 import Terms from "../Pages/Terms";
+import Contact from "../Pages/Contact";
 const AppRoute = () => {
   return (
     <Router>
@@ -24,6 +25,7 @@ const AppRoute = () => {
         <Route path='/blog' element={<Blog />} />
         <Route path='/faq' element={<Faq />} />
         <Route path='/terms' element={<Terms />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

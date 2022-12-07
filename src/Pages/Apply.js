@@ -1,7 +1,73 @@
 import React from "react";
+import Input from "../Components/Form/input";
 
 const Apply = () => {
-  return <div>Apply</div>;
+  return (
+    <div>
+      <div className='h-[100px] bg-black w-full' />
+      <div className='p-4 my-10 max-w-5xl mx-auto'>
+        <h4 className='font-bold text-xl'>Personal Information</h4>
+        <div className='border-2 rounded-md p-4 my-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='name' title='First Name' id='' />
+            <Input input type='name' title='Last Name' id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='email' title='Email Address' id='' />
+            <Input input type='tel' title='Phone Number' id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='text' title='Gender' id='' />
+            <Input input type='number' title='BVN' id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='text' title='Full Residential Address' id='' />
+            <Input input type='text' title='Residential Type' id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='text' title='Marital Status' id='' />
+            <Input input type='text' title='Occupation' id='' />
+          </div>
+        </div>
+        <h4 className='font-bold text-xl'>Guarantor's Information</h4>
+        <div className='border-2 rounded-md p-4 my-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='name' title='First Name' id='' />
+            <Input input type='name' title='Last Name' id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='email' title='Email Address' id='' />
+            <Input input type='tel' title='Phone Number' id='' />
+          </div>
+        </div>
+        <h4 className='font-bold text-xl'>Employment Information</h4>
+        <div className='border-2 rounded-md p-4 my-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='name' title={`Employer's Full Name`} id='' />
+            <Input input type='name' title={`Employer's Address`} id='' />
+          </div>
+        </div>
+        <h4 className='font-bold text-xl'>Loan Information</h4>
+        <div className='border-2 rounded-md p-4 my-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='number' title={`Requested Amount`} id='' />
+            <Input input type='text' title={`Loan Tenure`} id='' />
+          </div>
+        </div>
+        <h4 className='font-bold text-xl'>Bank Statement</h4>
+        <div className='border-2 rounded-md p-4 my-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='number' title={`Requested Amount`} id='' />
+          </div>
+        </div>
+        <div className='flex items-center justify-center my-10'>
+          <button className='bg-[#028006] rounded-md hover:bg-green-500 transition text-white p-4 px-12'>
+            Submit Application
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Apply;
