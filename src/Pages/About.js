@@ -3,6 +3,7 @@ import hero from "../assets/images/about-hero.png";
 import img1 from "../assets/images/img1.png";
 import img2 from "../assets/images/img2.png";
 import left from "../assets/images/l-left.png";
+import Team from "./Team";
 
 const About = () => {
   return (
@@ -78,6 +79,7 @@ const About = () => {
           <img src={img2} alt='about-img' />
         </div>
       </div>
+      <Team />
     </div>
   );
 };

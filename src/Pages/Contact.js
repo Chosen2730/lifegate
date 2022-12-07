@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
         <div className=''>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15834.213685088695!2d3.3691251500000003!3d7.177506499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1670421716246!5m2!1sen!2sng'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.36965670969!2d3.386135813964386!3d6.600899824091977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92fac37ff3f3%3A0x7aa81bb2bf391eb3!2s497%20Ikorodu-Ososun%20Rd%2C%20Ikosi%20Ketu%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1670426573975!5m2!1sen!2sng'
             width='600'
             height='450'
             allowFullScreen=''
