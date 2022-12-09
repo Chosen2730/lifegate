@@ -8,7 +8,7 @@ import godwin from "../assets/images/godwin.png";
 import ilesanmi from "../assets/images/ilesanmi.png";
 import mayowa from "../assets/images/mayowa.png";
 import omotayo from "../assets/images/omotayo.png";
-import adewale from "../assets/images/adewale.png";
+import adewale from "../assets/images/adewale.jpg";
 import chinyere from "../assets/images/chinyere.png";
 import patrick from "../assets/images/patrick.png";
 import samuel from "../assets/images/samuel.png";
@@ -88,8 +88,12 @@ const Team = () => {
           </h2>
         </div>
         <div className='flex flex-col items-center justify-center my-4'>
-          <div className='relative flex items-center justify-center'>
-            <img src={adewale} alt='adewale' />
+          <div className='relative flex items-center justify-center bg-blur bg-gradient-to-b  from-gray-500 to-green-900'>
+            <img
+              src={adewale}
+              className='w-64 mix-blend-overlay'
+              alt='adewale'
+            />
             <h2 className='absolute text-center bottom-4 font-medium text-xl text-white'>
               Dayo Adewale
             </h2>

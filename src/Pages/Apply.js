@@ -76,7 +76,7 @@ const Apply = () => {
 
         <div className='flex items-center justify-center my-10'>
           <button className='bg-[#028006] rounded-md hover:bg-green-500 transition text-white p-4 px-12'>
-            Submit Application
+            Submit Application 
           </button>
         </div>
       </div>

@@ -29,22 +29,34 @@ const About = () => {
               </h2>
             </div>
             <p className='my-4 text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
-              voluptates atque eligendi itaque vel accusamus dignissimos
-              voluptatem odit! Aliquam cupiditate officiis harum illum tenetur!
-              Nobis aliquam exercitationem inventore earum.
+              Lifegate Microfinance Bank situated at the heart of Kosofe LGA of
+              Lagos State commenced operation in the year 2008, with the primary
+              aim of providing financial services to the informal and semi
+              formal sector in ketu and its environs.
             </p>
             <p className='my-4 text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
-              voluptates atque eligendi itaque vel accusamus dignissimos
-              voluptatem odit! Aliquam cupiditate officiis harum illum tenetur!
-              Nobis aliquam exercitationem inventore earum.
+              The bank is committed to its passion of improving the business
+              opportunities of entrepreneurs by availing them easy access to
+              affordable loans, micro investment opportunities and financial
+              advisory services, as well as acting as agent for Micro pension
+              and insurance, a one stop shop for all financial needs of SMEs in
+              Lagos.
             </p>
             <p className='my-4 text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
-              voluptates atque eligendi itaque vel accusamus dignissimos
-              voluptatem odit! Aliquam cupiditate officiis harum illum tenetur!
-              Nobis aliquam exercitationem inventore earum.
+              We pride ourselves in our ability to provide simple solutions with
+              quality, excellent and exceptional services. As such we are
+              deliberate in ensuring that we are constantly abreast of
+              innovation and market changes that can affect the businesses in
+              our sector. The bank has exceptional and strong shareholders
+              committed to the task of improving access to financial service in
+              the country.
+            </p>
+            <p className='my-4 text-sm'>
+              We believe that by providing a broad package of financial
+              inclusion products and business development services to the
+              socially and economically challenged, we will be able to increase
+              the enabling environment for growth and expansion which will in
+              turn increase the GDP of the economy
             </p>
           </div>
           <img src={img1} alt='about-img' />
@@ -58,23 +70,33 @@ const About = () => {
               </h2>
             </div>
             <p className='my-4 text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
-              voluptates atque eligendi itaque vel accusamus dignissimos
-              voluptatem odit! Aliquam cupiditate officiis harum illum tenetur!
-              Nobis aliquam exercitationem inventore earum.
+              To provide Financial and Advisory services to the low income
+              echelon of the Nigerian Society with such efficiency and integrity
+              that all stake holders are justifiably proud to be associated with
+              LMFB.
             </p>
+            <div className='flex gap-4 item-center'>
+              {/* <img src={left} alt='' /> */}
+              <h2 className='font-bold text-xl md:text-2xl text-[#028006]'>
+                Our Vision
+              </h2>
+            </div>
             <p className='my-4 text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
-              voluptates atque eligendi itaque vel accusamus dignissimos
-              voluptatem odit! Aliquam cupiditate officiis harum illum tenetur!
-              Nobis aliquam exercitationem inventore earum.
+              To be the first choice inclusive finance solution provider
             </p>
-            <p className='my-4 text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi
-              voluptates atque eligendi itaque vel accusamus dignissimos
-              voluptatem odit! Aliquam cupiditate officiis harum illum tenetur!
-              Nobis aliquam exercitationem inventore earum.
-            </p>
+            <div className='flex gap-4 item-center'>
+              {/* <img src={left} alt='' /> */}
+              <h2 className='font-bold text-xl md:text-2xl text-[#028006]'>
+                Core Values
+              </h2>
+            </div>
+            <div className='ml-8'>
+              <li className='list-disc my-3'>Integrity</li>
+              <li className='list-disc my-3'>Innovation</li>
+              <li className='list-disc my-3'>Inclusion</li>
+              <li className='list-disc my-3'>Transparency </li>
+              <li className='list-disc my-3'>Accountability</li>
+            </div>
           </div>
           <img src={img2} alt='about-img' />
         </div>
