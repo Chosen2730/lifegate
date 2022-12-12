@@ -40,7 +40,7 @@ const Team = () => {
         </h2>
       </div>
       <div className='flex flex-col md:flex-row p-8 bg-gray-100 shadow-xl gap-8 my-6 mb-20'>
-        <img src={stephen} alt='stephen' />
+        {/* <img src={stephen} alt='stephen' /> */}
         <div>
           <h2 className='font-bold text-lg'>Mr Stephen</h2>
           <h3 className='text-sm my-1 font-medium'>Chairman</h3>
@@ -56,7 +56,7 @@ const Team = () => {
         </div>
       </div>
       <div className='flex flex-col md:flex-row-reverse p-8 bg-gray-100 shadow-xl gap-8 my-20'>
-        <img src={adedayo} alt='adedayo' />
+        {/* <img src={adedayo} alt='adedayo' /> */}
         <div>
           <h2 className='font-bold text-lg'>Miss Adedayo Adewale</h2>
           <h3 className='text-sm my-1 font-medium'>Managing Director</h3>
@@ -71,11 +71,11 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 bg-black text-white p-4'>
         {teams.map(({ name, img }, i) => {
           return (
             <div className='flex flex-col items-center' key={i}>
-              <img className='w-full' src={img} alt={name} />
+              {/* <img className='w-full' src={img} alt={name} /> */}
               <h2 className='text-center text-base my-2 font-medium'>{name}</h2>
             </div>
           );
