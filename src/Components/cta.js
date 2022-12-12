@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import hero from "../assets/images/hero.png";
 const CTA = () => {
   return (
@@ -12,9 +13,11 @@ const CTA = () => {
           We have the best form of loan offer for you with flexible payment
           option
         </p>
-        <button className='bg-[#028006] text-white p-4 text-center w-full max-w-3xl my-10 mx-auto shadow-xl hover:scale-105 hover:bg-green-900 transition'>
-          Click here to apply
-        </button>
+        <Link to='/apply'>
+          <button className='bg-[#028006] text-white p-4 text-center w-full max-w-3xl my-10 mx-auto shadow-xl hover:scale-105 hover:bg-green-900 transition'>
+            Click here to apply
+          </button>
+        </Link>
       </div>
     </div>
   );

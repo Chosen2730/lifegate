@@ -3,6 +3,7 @@ import phone from "../assets/images/phone.png";
 import spiral from "../assets/images/spiral.png";
 import google from "../assets/images/google.png";
 import app from "../assets/images/app.png";
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
@@ -31,9 +32,11 @@ const Section2 = () => {
           <li className='list-disc my-3'>Lifegate Future Account</li>
           <li className='list-disc my-3'>Lifegate Invest</li>
           <li className='list-disc my-3'>Lifegate Social Investor</li>
-          <button className='z-50 relative p-4 font-bold px-8 rounded-md shadow-xl hover:bg-black transition hover:scale-105 text-[#028006] bg-white my-4'>
-            Register now
-          </button>
+          <Link to='/apply'>
+            <button className='z-50 relative p-4 font-bold px-8 rounded-md shadow-xl hover:bg-black transition hover:scale-105 text-[#028006] bg-white my-4'>
+              Register now
+            </button>
+          </Link>
         </div>
       </div>
       <div className='absolute top-0 flex items-center justify-center w-full h-full'>
