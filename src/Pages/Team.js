@@ -13,7 +13,8 @@ import chinyere from "../assets/images/chinyere.png";
 import patrick from "../assets/images/patrick.png";
 import samuel from "../assets/images/samuel.png";
 import oluwaseun from "../assets/images/oluwaseun.png";
-import oladipo from "../assets/images/oladipupo.png";
+import oladipo from "../assets/images/oladipupo.jpg";
+import manage from "../assets/images/management.jpg";
 
 const Team = () => {
   const teams = [
@@ -88,13 +89,20 @@ const Team = () => {
           </h2>
         </div>
         <div className='flex flex-col items-center justify-center my-4'>
-          <div className='relative flex items-center justify-center bg-blur bg-gradient-to-b  from-gray-500 to-green-900'>
+          <div>
+            <img
+              src={manage}
+              className='w-screen h-96 object-cover'
+              alt='management'
+            />
+          </div>
+          <div className='relative flex items-center justify-center rounded-full my-10 w-full md:w-96 h-[500px]  bg-blur bg-gradient-to-b  from-gray-500 to-green-900 m-4'>
             <img
               src={adewale}
-              className='w-64 mix-blend-overlay'
+              className='w-full md:w-96 h-[500px] object-cover rounded-full shadow-xl mix-blend-overlay'
               alt='adewale'
             />
-            <h2 className='absolute text-center bottom-4 font-medium text-xl text-white'>
+            <h2 className='absolute text-center bottom-12 font-medium text-xl text-white'>
               Dayo Adewale
             </h2>
           </div>
@@ -106,7 +114,7 @@ const Team = () => {
                   key={i}
                 >
                   <img
-                    className='w-full mix-blend-overlay'
+                    className='w-full mix-blend-overlay h-52 object-cover'
                     src={img}
                     alt={name}
                   />
