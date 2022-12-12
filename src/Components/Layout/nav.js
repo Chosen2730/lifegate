@@ -8,7 +8,6 @@ const Nav = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const navLinks = [
     { link: "About Us", url: "/about" },
-    // { link: "The Team", url: "/team" },
     { link: "Our Services", url: "/services" },
     { link: "Contact Us", url: "/contact" },
     { link: "Blog", url: "/blog" },
@@ -19,7 +18,7 @@ const Nav = () => {
       <div
         className={`${
           isDropDown ? "bg-grad" : "bg-transparent"
-        } lg:bg-transparent flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 p-8 absolute top-0 w-full right-0 z-10`}
+        } lg:bg-transparent flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 p-8 w-full right-0 z-10`}
       >
         <div className='flex justify-between w-full lg:w-fit'>
           <Link to='/' onClick={() => setIsDropDown(false)}>
@@ -44,7 +43,11 @@ const Nav = () => {
                 className={`${
                   i === navLinks.length - 1 &&
                   "bg-[#028006] p-4 px-8 text-white rounded-md font-bold hover:scale-105 hover:bg-green-900 transition"
-                } ${i == selectedIndex ? "text-[#028006]" : "text-white"}`}
+                } ${
+                  i == selectedIndex
+                    ? "text-green-500 font-bold"
+                    : "text-[#028006]"
+                }`}
                 to={url}
                 onClick={() => {
                   setIsDropDown(false);

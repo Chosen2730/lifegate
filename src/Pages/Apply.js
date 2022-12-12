@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Input from "../Components/Form/input";
 
 const Apply = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
-      <div className='h-[100px] bg-black w-full' />
       <div className='p-4 my-10 max-w-5xl mx-auto'>
         <h4 className='font-bold text-xl'>Personal Information</h4>
         <div className='border-2 rounded-md p-4 my-5'>
@@ -76,7 +78,7 @@ const Apply = () => {
 
         <div className='flex items-center justify-center my-10'>
           <button className='bg-[#028006] rounded-md hover:bg-green-500 transition text-white p-4 px-12'>
-            Submit Application 
+            Submit Application
           </button>
         </div>
       </div>

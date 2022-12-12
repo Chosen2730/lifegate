@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hero from "../assets/images/service.png";
 import business from "../assets/images/business.png";
 import dail from "../assets/images/daily.png";
@@ -8,6 +8,9 @@ import social from "../assets/images/social.png";
 import account from "../assets/images/account.png";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   const services = [
     { service: "Lifegate Savings/Current Account", img: piggy },
     { service: "Lifegate Business Account", img: business },

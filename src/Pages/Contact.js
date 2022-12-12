@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hero from "../assets/images/contact.png";
 import email from "../assets/images/email.png";
 import call from "../assets/images/call.png";
@@ -8,6 +8,9 @@ import fb from "../assets/images/fb2.png";
 import linkedin from "../assets/images/linkendIn2.png";
 import ig from "../assets/images/ig2.png";
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div className=''>
       <div className='relative'>

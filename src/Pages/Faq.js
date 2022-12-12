@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hero from "../assets/images/faq.png";
 import Faqs from "../Components/Faq/index";
 const Faq = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className='relative'>

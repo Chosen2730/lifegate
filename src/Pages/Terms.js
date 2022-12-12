@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hero from "../assets/images/faq.png";
 const Terms = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className='relative'>

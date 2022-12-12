@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hero from "../assets/images/hero.png";
 import BlogHeader from "../Components/Layout/blogHeader";
 import Section2 from "../Components/section2";
 import { posts } from "../Configs/blog";
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div className=''>
       <div className='relative'>

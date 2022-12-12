@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import hero from "../assets/images/about-hero.png";
 import img1 from "../assets/images/img1.png";
 import img2 from "../assets/images/img2.png";
@@ -6,6 +7,9 @@ import left from "../assets/images/l-left.png";
 import Team from "./Team";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div>
       <div className='relative'>
