@@ -54,7 +54,7 @@ html {
 .swiper-slide img {
   display: block;
   width: 100vh;
-  height: 400px;
+  height: 250px;
   object-fit: cover;
 }
 
