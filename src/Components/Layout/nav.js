@@ -18,7 +18,7 @@ const Nav = () => {
       <div
         className={`${
           isDropDown ? "bg-grad" : "bg-transparent"
-        } lg:bg-transparent flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 p-8 w-full right-0 z-10`}
+        } lg:bg-transparent flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 p-8 py-3 w-full right-0 z-10`}
       >
         <div className='flex justify-between w-full lg:w-fit'>
           <Link to='/' onClick={() => setIsDropDown(false)}>

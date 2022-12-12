@@ -13,7 +13,7 @@ const About = () => {
   }, []);
   return (
     <div>
-      <div className='relative bg-blur bg-gradient-to-b  from-gray-500 to-green-900 m-4'>
+      <div className='relative bg-blur bg-gradient-to-b  from-gray-500 to-green-900'>
         <img
           className='min-h-[600px] object-cover w-full mix-blend-overlay'
           src={hero}
