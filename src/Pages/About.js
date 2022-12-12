@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
-import hero from "../assets/images/about-hero.png";
-import img1 from "../assets/images/img1.png";
-import img2 from "../assets/images/img2.png";
+import hero from "../assets/images/about-hero.jpg";
+import img1 from "../assets/images/left.jpg";
+import img2 from "../assets/images/right.jpg";
 import left from "../assets/images/l-left.png";
+
 import Team from "./Team";
 
 const About = () => {
@@ -12,8 +13,12 @@ const About = () => {
   }, []);
   return (
     <div>
-      <div className='relative'>
-        <img className='min-h-[600px] object-cover w-full' src={hero} alt='' />
+      <div className='relative bg-blur bg-gradient-to-b  from-gray-500 to-green-900 m-4'>
+        <img
+          className='min-h-[600px] object-cover w-full mix-blend-overlay'
+          src={hero}
+          alt=''
+        />
         <div className='absolute top-0 left-0 text-white flex flex-col items-center justify-center h-full w-full p-4'>
           <h1 className='font-medium text-3xl md:text-6xl text-center'>
             About us
@@ -63,10 +68,16 @@ const About = () => {
               turn increase the GDP of the economy
             </p>
           </div>
-          <img src={img1} alt='about-img' />
+          <div>
+            <img
+              src={img1}
+              className='w-full h-full object-cover'
+              alt='about-img'
+            />
+          </div>
         </div>
         <div className='flex gap-6 flex-col md:flex-row-reverse my-20'>
-          <div>
+          <div className='md:w-[50%]'>
             <div className='flex gap-4 item-center'>
               <img src={left} alt='' />
               <h2 className='font-bold text-xl md:text-2xl text-[#028006]'>
@@ -102,7 +113,13 @@ const About = () => {
               <li className='list-disc my-3'>Accountability</li>
             </div>
           </div>
-          <img src={img2} alt='about-img' />
+          <div className='md:w-[50%]'>
+            <img
+              src={img2}
+              className='w-full h-full object-cover'
+              alt='about-img'
+            />
+          </div>
         </div>
       </div>
       <Team />
