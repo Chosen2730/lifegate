@@ -16,23 +16,53 @@ const Apply = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='date' title='Date of Birth' id='' />
-            <Input input type='name' title='Next of Kin' id='' />
+            <Input
+              dropdown
+              data={["Single", "Married", "Divorced"]}
+              type='text'
+              title='Marital Status'
+              id=''
+            />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='email' title='Email Address' id='' />
             <Input input type='tel' title='Phone Number' id='' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <Input input type='text' title='Gender' id='' />
+            <Input
+              dropdown
+              data={["Male", "Female"]}
+              type='text'
+              title='Gender'
+              id=''
+            />
             <Input input type='number' title='BVN' id='' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='text' title='Full Residential Address' id='' />
-            <Input input type='text' title='Residential Type' id='' />
+            <Input
+              dropdown
+              data={[
+                "Temporary Owned",
+                "Rented",
+                "Family Owned",
+                "Personally Owned",
+                "Employer Provided",
+              ]}
+              type='text'
+              title='Residential Type'
+              id=''
+            />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <Input input type='text' title='Marital Status' id='' />
-            <Input input type='text' title='Occupation' id='' />
+            <Input
+              dropdown
+              data={["Business", "Employed", "Artisan"]}
+              type='text'
+              title='Occupation'
+              id=''
+            />
+            <Input input type='name' title='Next of Kin' id='' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='file' title='Passport' id='' />
@@ -72,7 +102,19 @@ const Apply = () => {
         <div className='border-2 rounded-md p-4 my-5'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='number' title={`Requested Amount`} id='' />
-            <Input input type='text' title={`Loan Tenure`} id='' />
+            <Input
+              dropdown
+              data={[
+                "1 Month",
+                "3 Months",
+                "6 Months",
+                "9 Months",
+                "12 Months",
+              ]}
+              type='text'
+              title={`Loan Tenure`}
+              id=''
+            />
           </div>
         </div>
 

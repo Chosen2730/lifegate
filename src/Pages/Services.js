@@ -13,18 +13,18 @@ const Services = () => {
   }, []);
   const services = [
     { service: "Lifegate Savings/Current Account", img: piggy },
-    { service: "Lifegate Business Account", img: business },
-    { service: "Lifegate Daily Account", img: dail },
+    { service: "Lifegate Target Savings Account", img: business },
+    { service: "Lifegate AJO Oriire Account", img: dail },
     { service: "Lifegate Future Account", img: future },
     { service: "Lifegate Invest Account", img: account },
     { service: "Lifegate Social Investor Account", img: social },
   ];
   const loans = [
     { title: "Lifegate Kiakia Loan", amount: "100,000" },
-    { title: "Lifegate Micro Loan", amount: "100,000" },
-    { title: "Lifegate SME Loan", amount: "100,000" },
-    { title: "Lifegate Salary Loan", amount: "100,000" },
-    { title: "Lifegate Asset/ LPO Loan", amount: "100,000" },
+    { title: "Lifegate Micro Loan", amount: "500,000" },
+    { title: "Lifegate SME Loan", amount: "10,000,000" },
+    { title: "Lifegate Salary Loan", amount: "3,000,000" },
+    { title: "Lifegate Asset/ LPO Loan", amount: "10,000,000" },
   ];
   return (
     <div>
@@ -69,12 +69,12 @@ const Services = () => {
             Fast and easy application process with Lifegate Microfinance, Begin
             with a click.
           </p>
-          <div className='bg-white p-8'>
+          <div className='p-8'>
             <div className='max-w-2xl mx-auto flex flex-col gap-8'>
               {loans.map(({ title, amount }, i) => {
                 return (
                   <div
-                    className='flex flex-col md:flex-row justify-between'
+                    className='flex flex-col md:flex-row justify-between shadow-md p-8 rounded-md bg-white'
                     key={i}
                   >
                     <h2 className='text-lg font-medium'>{title}</h2>
@@ -84,7 +84,7 @@ const Services = () => {
               })}
             </div>
           </div>
-          <div className='max-w-6xl mx-auto'>
+          <div className='max-w-2xl mx-auto'>
             <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
               Apply Now
             </button>

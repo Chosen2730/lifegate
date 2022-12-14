@@ -24,7 +24,7 @@ const Section2 = () => {
         </div>
       </div>
       <div className='flex flex-col md:flex-row items-center gap-2 my-10'>
-        <img src={phone} alt='phone' />
+        <img src={phone} className='relative z-50' alt='phone' />
         <div className='text-lg'>
           <li className='list-disc my-3'>Lifegate Savings/Current Account</li>
           <li className='list-disc my-3'>Lifegate Business Account</li>

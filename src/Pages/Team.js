@@ -9,10 +9,10 @@ import ilesanmi from "../assets/images/ilesanmi.png";
 import mayowa from "../assets/images/mayowa.png";
 import omotayo from "../assets/images/omotayo.png";
 import adewale from "../assets/images/adewale.jpg";
-import chinyere from "../assets/images/chinyere.png";
-import patrick from "../assets/images/patrick.png";
-import samuel from "../assets/images/samuel.png";
-import oluwaseun from "../assets/images/oluwaseun.png";
+import chinyere from "../assets/images/chinyere.jpg";
+import patrick from "../assets/images/patrick.jpg";
+import samuel from "../assets/images/samuel.jpg";
+import oluwaseun from "../assets/images/oluwaseun.jpg";
 import oladipo from "../assets/images/oladipupo.jpg";
 import manage from "../assets/images/management.jpg";
 
@@ -92,7 +92,7 @@ const Team = () => {
           <div>
             <img
               src={manage}
-              className='w-screen h-96 object-cover'
+              className='w-screen md:h-[580px] object-cover'
               alt='management'
             />
           </div>
@@ -106,7 +106,7 @@ const Team = () => {
               Dayo Adewale
             </h2>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 my-10'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 my-10 w-full'>
             {management.map(({ name, img }, i) => {
               return (
                 <div
@@ -114,7 +114,7 @@ const Team = () => {
                   key={i}
                 >
                   <img
-                    className='w-full mix-blend-overlay h-52 object-cover'
+                    className='w-full mix-blend-overlay h-96 md:h-64 object-cover'
                     src={img}
                     alt={name}
                   />
