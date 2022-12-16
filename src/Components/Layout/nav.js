@@ -8,6 +8,7 @@ const Nav = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const navLinks = [
     { link: "About Us", url: "/about" },
+    { link: "The Team", url: "/team" },
     { link: "Our Services", url: "/services" },
     { link: "Contact Us", url: "/contact" },
     { link: "Blog", url: "/blog" },

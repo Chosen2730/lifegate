@@ -6,6 +6,7 @@ import future from "../assets/images/future.png";
 import piggy from "../assets/images/piggy.png";
 import social from "../assets/images/social.png";
 import account from "../assets/images/account.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   useEffect(() => {
@@ -35,10 +36,13 @@ const Services = () => {
             <h1 className='font-bold text-3xl md:text-6xl text-center text-[#028006]'>
               Our Services
             </h1>
-            <p className='text-base md:text-xl text-center font-medium my-6 text-black'>
-              With Industry Experts right in the loop. We have come up with the
-              best savings options for everyone interested in banking with
-              Lifegate Microfinance.
+            <p className='text-sm md:text-base text-center font-medium my-6 text-black'>
+              The bank is committed to its passion of improving the business
+              opportunities of entrepreneurs by availing them easy access to
+              affordable loans, micro investment opportunities and financial
+              advisory services, as well as acting as agent for Micro pension
+              and insurance, a one stop shop for all financial needs of SMEs in
+              Lagos
             </p>
           </div>
         </div>
@@ -57,9 +61,11 @@ const Services = () => {
         })}
       </div>
       <div className='max-w-6xl mx-auto p-4'>
-        <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
-          Apply Now
-        </button>
+        <Link to='/apply'>
+          <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
+            Apply Now
+          </button>
+        </Link>
       </div>
       <div className='bg-gray-50 p-8'>
         <div className='max-w-6xl mx-auto my-20 '>
@@ -77,7 +83,10 @@ const Services = () => {
                     className='flex flex-col md:flex-row justify-between shadow-md p-8 rounded-md bg-white'
                     key={i}
                   >
-                    <h2 className='text-lg font-medium'>{title}</h2>
+                    <div className='flex items-center gap-3'>
+                      <img src={future} className='w-8' alt='' />
+                      <h2 className='text-lg font-medium'>{title}</h2>
+                    </div>
                     <h2 className='text-gray-700'>Max NGN {amount}</h2>
                   </div>
                 );
@@ -85,9 +94,11 @@ const Services = () => {
             </div>
           </div>
           <div className='max-w-2xl mx-auto'>
-            <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
-              Apply Now
-            </button>
+            <Link to='/apply'>
+              <button className='bg-[#028006] text-white p-4 text-center w-full my-10 shadow-xl hover:scale-105 hover:bg-green-900 transition'>
+                Apply Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

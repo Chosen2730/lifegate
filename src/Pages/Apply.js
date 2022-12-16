@@ -62,7 +62,14 @@ const Apply = () => {
               title='Occupation'
               id=''
             />
+            <Input input type='name' title={`Mother's Maiden Name`} id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='name' title='Next of Kin' id='' />
+            <Input input type='tel' title='Next of Kin Mobile Number' id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='text' title='Relationship' id='' />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='file' title='Passport' id='' />
@@ -89,6 +96,7 @@ const Apply = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='file' title='Signature' id='' />
+            <Input input type='file' title='Utility Bill' id='' />
           </div>
         </div>
         <h4 className='font-bold text-xl'>Employment Information</h4>
@@ -96,6 +104,10 @@ const Apply = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input input type='name' title={`Employer's Full Name`} id='' />
             <Input input type='name' title={`Employer's Address`} id='' />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <Input input type='tel' title={`Employer's Phone Number`} id='' />
+            <Input input type='text' title={`Employer's Position`} id='' />
           </div>
         </div>
         <h4 className='font-bold text-xl'>Loan Information</h4>

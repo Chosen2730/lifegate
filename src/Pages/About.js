@@ -122,7 +122,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Team />
+      {/* <Team /> */}
     </div>
   );
 };
