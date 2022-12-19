@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import hero from "../assets/images/service.png";
+import hero from "../assets/images/service.jpg";
 import business from "../assets/images/business.png";
 import dail from "../assets/images/daily.png";
 import future from "../assets/images/future.png";
