@@ -54,9 +54,10 @@ const Apply = () => {
       Swal.fire({
         icon: "error",
         title: "Error",
-        text: "There was an error submitting your form",
+        text: error.response.data.message,
         button: "Ok!",
       });
+      console.log(error);
       setLoading(false);
     }
   };
