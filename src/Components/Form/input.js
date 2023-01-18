@@ -43,7 +43,7 @@ const Input = ({
       )}
       {dropdown && (
         <select
-          className='w-full bg-gray-100 p-4 my-2'
+          className='w-full bg-gray-100 p-4 my-2 rounded-md'
           name={id}
           id=''
           onChange={setItem}
