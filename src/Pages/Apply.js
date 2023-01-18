@@ -18,7 +18,6 @@ const Apply = () => {
 
   const imagesHandler = (e) => {
     setImages({ ...images, [e.target.name]: e.target.files[0] });
-    console.log(images);
   };
 
   const handleSubmit = async (e) => {
@@ -54,8 +53,8 @@ const Apply = () => {
     } catch (error) {
       Swal.fire({
         icon: "error",
-        title: "There was an error submitting your form",
-        text: "error",
+        title: "Error",
+        text: "There was an error submitting your form",
         button: "Ok!",
       });
       setLoading(false);
@@ -176,27 +175,27 @@ const Apply = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input
-              // setItem={inputHandler}
+              setItem={inputHandler}
               input
               type='name'
               title='Next of Kin'
-              id=''
+              id='next_of_kin'
             />
             <Input
-              // setItem={inputHandler}
+              setItem={inputHandler}
               input
               type='tel'
               title='Next of Kin Mobile Number'
-              id=''
+              id='next_of_kin_number'
             />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Input
-              // setItem={inputHandler}
+              setItem={inputHandler}
               input
               type='text'
               title='Relationship'
-              id=''
+              id='relationship'
             />
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
