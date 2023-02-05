@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
       <p className='text-center text-xs mt-10'>
-        Copyright 2022. All Rights Reserved
+        Copyright {new Date().getFullYear()}. All Rights Reserved
       </p>
       <a
         href='http://wa.me/2348096809905'

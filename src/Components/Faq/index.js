@@ -19,7 +19,7 @@ const Faq = () => {
           target={"__blank"}
           className='bg-[#028006] text-white p-4 px-8 text-center w-fit my-4 shadow-xl hover:scale-105 hover:bg-green-900 transition'
         >
-          Info@Lifegatemicrofinance.com
+          hello@Lifegatebank.com
         </a>
       </div>
     </div>
