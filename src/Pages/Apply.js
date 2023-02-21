@@ -3,14 +3,19 @@ import React, { useEffect, useState } from "react";
 import Input from "../Components/Form/input";
 import Swal from "sweetalert2";
 import Spinner from "../Components/spinner";
+import ApplyTerms from "../Components/applyTerms";
+import { useNavigate } from "react-router-dom";
 
 const Apply = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({});
   const [images, setImages] = useState({});
   const [loading, setLoading] = useState(false);
+  const [isModalShown, setIsModalShown] = useState(false);
+  const [isTermAgreed, setIsTermAgreed] = useState(false);
 
   const inputHandler = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,46 +25,56 @@ const Apply = () => {
     setImages({ ...images, [e.target.name]: e.target.files[0] });
   };
 
-  const handleSubmit = async (e) => {
-    setLoading(true);
-    e.preventDefault();
-    const data = { ...formData, ...images };
-
-    // console.log(data);
-    // let formDatas = new FormData();
-    // for (const key in data) {
-    //   formDatas.append(key, data[key]);
-    // }
-
-    try {
-      const res = await axios.post(
-        "https://api.lifegatebank.com/api/v1/register",
-        data,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
-      setLoading(false);
-
-      Swal.fire({
-        icon: "success",
-        title: "SuccessFul!",
-        text: "Data Submitted successfully",
-        button: "Ok!",
-      });
-      window.location.reload();
-    } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: error.response.data.message,
-        button: "Ok!",
-      });
-      console.log(error);
-      setLoading(false);
+  const clickHandler = () => {
+    setIsModalShown(false);
+  };
+  console.log(isTermAgreed);
+  const agreeHander = (e) => {
+    // console.log(e.target.value, e.target.checked);
+    if (e.target.checked) {
+      setIsTermAgreed(true);
     }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (isTermAgreed) {
+      setLoading(true);
+      const data = { ...formData, ...images };
+      try {
+        const res = await axios.post(
+          "https://api.lifegatebank.com/api/v1/register",
+          data,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+        setLoading(false);
+        Swal.fire({
+          icon: "success",
+          title: "SuccessFul!",
+          text: "Data Submitted successfully",
+          button: "Ok!",
+        });
+        navigate("/");
+        window.location.reload();
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: error.response.data.message,
+          button: "Ok!",
+        });
+        console.log(error);
+        setLoading(false);
+      }
+    } else
+      alert(
+        "You Cannot Submit this form because you have not agree to the terms and conditions of this loan"
+      );
   };
 
   return (
@@ -362,6 +377,18 @@ const Apply = () => {
           </div>
         </div>
 
+        <h2
+          className='my-3 cursor-pointer text-green-600 text-sm'
+          onClick={() => setIsModalShown(true)}
+        >
+          Read Terms and Condition
+        </h2>
+
+        <div className='flex gap-3 items-center'>
+          <input type='checkbox' onChange={agreeHander} />
+          <h2>I have read and agreed to all terms </h2>
+        </div>
+
         <div className='flex items-center justify-center my-10'>
           <button className='bg-[#028006] rounded-md hover:bg-green-500 transition text-white p-4 px-12'>
             {loading ? (
@@ -372,6 +399,7 @@ const Apply = () => {
           </button>
         </div>
       </form>
+      <ApplyTerms isModalShown={isModalShown} clickHandler={clickHandler} />
     </div>
   );
 };
