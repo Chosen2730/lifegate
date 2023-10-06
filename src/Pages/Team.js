@@ -81,16 +81,25 @@ const Team = () => {
         <div className='flex flex-col md:flex-row-reverse p-8 bg-gray-100 shadow-xl gap-8 my-20'>
           {/* <img src={adedayo} alt='adedayo' /> */}
           <div>
-            <h2 className='font-bold text-lg'>Miss Adedayo Adewale</h2>
-            <h3 className='text-sm my-1 font-medium'>Managing Director</h3>
+            <h2 className='font-bold text-lg'>Mr. Oluwasogo Kolawole</h2>
+            <h3 className='text-sm my-1 font-medium'>
+              Managing Director/Business Development
+            </h3>
             <p className='text-sm my-6 leading-[2rem]'>
-              A resourceful professional with about 13 years’ experience in
-              business development, Credit training, customer service and
-              product/service design. Over the years, she has demonstrated
-              exceptional aptitude in assembling and leading high-performing
-              teams, gain customer trust and sustain business relationships
-              through excellent service delivery, leading to increased
-              referrals, recommendations, and endorsements…
+              Sogo Kolawole holds an HND in Banking and Finance from The Federal
+              Polytechnic, Ede, Osun State. He is a certified Microfinance
+              Banker by the Chartered Institute of Bankers of Nigeria (CIBN). He
+              started his banking career with Universal Truest Bank PLC as a
+              Consumer Banking Group & Retail Banking Group. He moved to Wonder
+              Foods Now Promasidor Nigeria Limited as production/ sales
+              personnel. He started is career in Microfinance Bank with
+              Integrated Microfinance Bank PLC as Group Business Manager/Profit
+              Center Manager , He moved to Marksmen Microfinance Institution as
+              Head, Risk, Credit and marketing. He also worked with Bosak
+              Microfinance Bank Limited as Head, Business Development also
+              Davodani Microfinance Bank Limited as Group Head, Business
+              Development and Branch Coordinator. He joined Lifegate MFB in 2023
+              as the Managing Director and Business Development.
             </p>
           </div>
         </div>
@@ -121,15 +130,15 @@ const Team = () => {
               alt='management'
             />
           </div> */}
-            <div className='relative flex items-center justify-center rounded-full my-10 w-full md:w-96 h-[500px]  bg-blur bg-gradient-to-b  from-gray-500 to-green-900 m-4'>
+            <div className='relative flex items-center justify-center rounded-full my-10 w-96 h-96  bg-blur bg-gradient-to-b  from-gray-500 to-green-900 m-4'>
               <img
-                src={adewale}
-                className='w-full md:w-96 h-[500px] object-cover rounded-full shadow-xl mix-blend-overlay'
+                src='https://cdn-icons-png.flaticon.com/512/3177/3177440.png'
+                className='w-96 h-96 object-cover rounded-full shadow-xl mix-blend-overlay'
                 alt='adewale'
               />
               <div className='absolute bottom-12 text-white text-center'>
                 <h2 className='text-center font-medium text-xl'>
-                  Dayo Adewale
+                  Mr. Oluwasogo Kolawole
                 </h2>
                 <p className='italic'>MD/CEO</p>
               </div>
