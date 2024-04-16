@@ -6,13 +6,13 @@ import godwin from "../assets/images/godwin.png";
 import ilesanmi from "../assets/images/ilesanmi.png";
 import mayowa from "../assets/images/mayowa.png";
 import omotayo from "../assets/images/omotayo.png";
-import adewale from "../assets/images/adewale.jpg";
 import chinyere from "../assets/images/chinyere.jpg";
 import patrick from "../assets/images/patrick.jpg";
 import samuel from "../assets/images/samuel.jpg";
 import oluwaseun from "../assets/images/oluwaseun.jpg";
 import oladipo from "../assets/images/oladipupo.jpg";
 import manage from "../assets/images/team.jpeg";
+import about from "../assets/images/about.jpeg";
 
 const Team = () => {
 	const teams = [
@@ -31,11 +31,11 @@ const Team = () => {
 		},
 		{ name: "Samuel Olowoyeye", img: samuel, position: "Head of Operations" },
 		{ name: "Oladimeji Tinuosho", img: oluwaseun, position: "IT Head" },
-		// {
-		// 	name: "Oladipo Olatilewa Ishola",
-		// 	img: oladipo,
-		// 	position: "Head of Credit and Risk",
-		// },
+		{
+			name: "Grace Adeyinka Jones",
+			img: about,
+			position: "Head of Credit and Risk",
+		},
 	];
 	return (
 		<div>
@@ -148,7 +148,7 @@ const Team = () => {
 								<p className='italic'>MD/CEO</p>
 							</div>
 						</div>
-						<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-10 w-full'>
+						<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 my-10 w-full'>
 							{management.map(({ name, img, position }, i) => {
 								return (
 									<div

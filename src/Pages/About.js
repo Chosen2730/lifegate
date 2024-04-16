@@ -5,8 +5,6 @@ import img1 from "../assets/images/left.jpg";
 import img2 from "../assets/images/right.jpg";
 import left from "../assets/images/l-left.png";
 
-import Team from "./Team";
-
 const About = () => {
 	useEffect(() => {
 		window.scrollTo({ top: 0 });
