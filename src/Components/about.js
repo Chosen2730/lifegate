@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../assets/images/about.jpeg";
+import about from "../assets/images/brief.jpeg";
 import point from "../assets/images/point.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Link } from "react-router-dom";

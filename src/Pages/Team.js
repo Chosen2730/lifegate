@@ -15,12 +15,17 @@ import manage from "../assets/images/team.jpeg";
 import about from "../assets/images/about.jpeg";
 
 const Team = () => {
+	// 	DR. GODWIN OROVWIRORO
+	// MRS. OLUYEMISI ILESANMI
+	// MR. MAYOWA OWOLABI
+	// MR. ROTIMI OMOTAYO
+	// MRS. ADEPEJU ADEKUNLE
 	const teams = [
-		{ name: "Mrs Oluyemi Ilesanmi", img: ilesanmi },
 		{ name: "Dr Godwin Orovriroro", img: godwin },
-		{ name: "Mrs Adefunke Omotayo", img: omotayo },
+		{ name: "Mrs Oluyemisi Ilesanmi", img: ilesanmi },
 		{ name: "Mr Mayowa Owolabi", img: mayowa },
-		{ name: "Mr Lanre Bankole", img: bankole },
+		{ name: "Mr Rotimi Omotayo", img: omotayo },
+		{ name: "Mrs Adepeju Adekunle", img: bankole },
 	];
 	const management = [
 		{ name: "Uche Betty Chinyere", img: chinyere, position: "Head of Finance" },
