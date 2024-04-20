@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import hero from "../assets/images/about-us.jpeg";
-import img1 from "../assets/images/left.jpg";
+import img1 from "../assets/images/brief.jpeg";
 import img2 from "../assets/images/right.jpg";
 import left from "../assets/images/l-left.png";
 
