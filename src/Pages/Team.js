@@ -24,16 +24,16 @@ const Team = () => {
 		{ name: "Dr Godwin Orovriroro", img: godwin },
 		{ name: "Mrs Oluyemisi Ilesanmi", img: ilesanmi },
 		{ name: "Mr Mayowa Owolabi", img: mayowa },
-		{ name: "Mr Rotimi Omotayo", img: omotayo },
+		// { name: "Mr Rotimi Omotayo", img: omotayo },
 		{ name: "Mrs Adepeju Adekunle", img: bankole },
 	];
 	const management = [
 		{ name: "Uche Betty Chinyere", img: chinyere, position: "Head of Finance" },
-		{
-			name: "Patrick Etokhana",
-			img: patrick,
-			position: "Head of Audit and Compliance",
-		},
+		// {
+		// 	name: "Patrick Etokhana",
+		// 	img: patrick,
+		// 	position: "Head of Audit and Compliance",
+		// },
 		{ name: "Samuel Olowoyeye", img: samuel, position: "Head of Operations" },
 		{ name: "Oladimeji Tinuosho", img: oluwaseun, position: "IT Head" },
 		{
@@ -153,7 +153,7 @@ const Team = () => {
 								<p className='italic'>MD/CEO</p>
 							</div>
 						</div>
-						<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 my-10 w-full'>
+						<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-10 w-full'>
 							{management.map(({ name, img, position }, i) => {
 								return (
 									<div
