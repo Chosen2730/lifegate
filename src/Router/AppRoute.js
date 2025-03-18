@@ -11,25 +11,27 @@ import Services from "../Pages/Services";
 import Blog from "../Pages/Blog";
 import Faq from "../Pages/Faq";
 import Terms from "../Pages/Terms";
+import Privacy from "../Pages/Privacy";
 import Contact from "../Pages/Contact";
 const AppRoute = () => {
-  return (
-    <Router>
-      <Nav />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/apply' element={<Apply />} />
-        <Route path='/team' element={<Team />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/faq' element={<Faq />} />
-        <Route path='/terms' element={<Terms />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
+	return (
+		<Router>
+			<Nav />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/apply' element={<Apply />} />
+				<Route path='/team' element={<Team />} />
+				<Route path='/services' element={<Services />} />
+				<Route path='/blog' element={<Blog />} />
+				<Route path='/faq' element={<Faq />} />
+				<Route path='/terms' element={<Terms />} />
+				<Route path='/privacy' element={<Privacy />} />
+				<Route path='/contact' element={<Contact />} />
+			</Routes>
+			<Footer />
+		</Router>
+	);
 };
 
 export default AppRoute;

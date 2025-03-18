@@ -10,7 +10,7 @@ import chinyere from "../assets/images/chinyere.jpg";
 import patrick from "../assets/images/patrick.jpg";
 import samuel from "../assets/images/samuel.jpg";
 import oluwaseun from "../assets/images/oluwaseun.jpg";
-import oladipo from "../assets/images/oladipupo.jpg";
+import md from "../assets/images/md.jpeg";
 import manage from "../assets/images/team.jpeg";
 import about from "../assets/images/about.jpeg";
 
@@ -142,8 +142,8 @@ const Team = () => {
           </div> */}
 						<div className='relative flex items-center justify-center rounded-full my-10 w-96 h-96  bg-blur bg-gradient-to-b  from-gray-500 to-green-900 m-4'>
 							<img
-								src='https://cdn-icons-png.flaticon.com/512/3177/3177440.png'
-								className='w-96 h-96 object-cover rounded-full shadow-xl mix-blend-overlay'
+								src={md}
+								className='w-96 h-96 object-cover rounded-full shadow-xl mix-blend-overlay object-top'
 								alt='adewale'
 							/>
 							<div className='absolute bottom-12 text-white text-center'>
